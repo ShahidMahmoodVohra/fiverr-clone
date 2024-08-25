@@ -55,4 +55,32 @@ document.querySelectorAll('.user-image .image-wrapper').forEach(wrapper => {
       }, 300); // Match the duration of the fade effect
     });
   });
-  
+
+//   dropdown active order btn on click functionality
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownButton = document.querySelector('.dropdown-btn');
+    const rotateIcon = dropdownButton.querySelector('.rotate-icon');
+    const dropdownContent = dropdownButton.nextElementSibling;
+
+    dropdownButton.addEventListener('click', function(event) {
+        // Toggle the dropdown visibility
+        dropdownContent.style.display = dropdownContent.style.display === 'flex' ? 'none' : 'flex';
+        
+        // Rotate the icon
+        rotateIcon.classList.toggle('rotated');
+
+        // Stop propagation to document
+        event.stopPropagation();
+    });
+
+    document.addEventListener('click', function(event) {
+        // Check if the click is outside the dropdown
+        if (!dropdownButton.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+            rotateIcon.classList.remove('rotated');
+        }
+    });
+});
+
+

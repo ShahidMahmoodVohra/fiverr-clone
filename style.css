@@ -27,9 +27,9 @@ header {
 
 .header-section.logo img {
   width: 125px;
-  height: auto; 
-  display: block; 
-  margin: 0 auto 15px auto; 
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
   cursor: pointer;
 }
 
@@ -40,13 +40,13 @@ header {
   cursor: pointer;
   color: #62647d;
   font-weight: 600;
-  padding: 15px 10px; 
+  padding: 15px 10px;
   transition: background-color 0.3s;
   border-radius: 5px;
 }
 
 .nav-item:hover {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 .dropdown-icon {
   cursor: pointer;
@@ -64,27 +64,27 @@ header {
   font-weight: 500;
   border: 1px solid rgba(204, 204, 204, 0.8);
   border-radius: 5px;
-  width: 200px; 
+  width: 200px;
   z-index: 1;
   line-height: 1.5;
 }
 
 .dropdown-content hr {
-  margin: 0; 
-  border: none; 
-  height: 1px; 
-  background-color: #ccc; 
-  width: 100%; 
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
 }
 .dropdown-content div {
-  margin-top: 0px; 
-  margin-bottom: 0px; 
-  padding: 8px 10px; 
-  cursor: pointer; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 8px 10px;
+  cursor: pointer;
 }
 
 .dropdown-content div:hover {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 
 .rotate-icon {
@@ -102,7 +102,7 @@ header {
 
 .header-section.user-info .icon {
   margin-right: 0px;
-  font-size: 20px; 
+  font-size: 20px;
   cursor: pointer;
   color: rgba(116, 118, 126, 0.8);
   transition: background-color 0.3s ease;
@@ -117,7 +117,7 @@ header {
 
 .tooltip {
   position: absolute;
-  top: 80%; 
+  top: 80%;
   left: 50%;
   font-size: 14px;
   transform: translateX(-50%);
@@ -178,7 +178,7 @@ header {
 .user-image .hover-info {
   display: none;
   position: absolute;
-  bottom: -19px; 
+  bottom: -19px;
   left: 70px;
   transform: translateX(-50%);
   background-color: white;
@@ -199,7 +199,6 @@ header {
   opacity: 0;
 }
 
-
 .earnings {
   border: 1px solid #62647d;
   padding: 1px 2px;
@@ -217,21 +216,19 @@ header {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: 1fr 84px 3fr;
-  gap: 2px; 
+  grid-template-columns: 1fr 60px 3fr;
+  gap: 2px;
   padding: 20px;
 }
 
 /* Styling for individual panels, optional */
 
-
 .right-panel {
   padding: 20px;
- 
 }
 .left-panel {
   background-color: white;
-  padding:20px;
+  padding: 20px;
   color: #74767e;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -389,14 +386,14 @@ hr {
   align-items: center;
   line-height: 1.8;
   background: #fff;
-  padding:10px 13px;
+  padding: 10px 13px;
   margin-bottom: 1px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .client:hover {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 
 .client-image {
@@ -454,15 +451,15 @@ hr {
   justify-content: space-around;
   padding: 0 3px;
 }
-.time{
+.time {
   color: #b5b6b8;
   font-weight: lighter;
   margin-left: 7px;
   padding-left: 3px;
 }
-.urgent-info{
+.urgent-info {
   font-size: 14px;
-  color:#74767e;
+  color: #74767e;
   font-weight: 400;
   width: max-content;
 }
@@ -472,7 +469,6 @@ hr {
   display: flex;
   align-items: center;
   margin-left: 48px;
-  
 }
 
 .email-icon i {
@@ -516,11 +512,173 @@ hr {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent  transparent  transparent #444546;
+  border-color: transparent transparent transparent #444546;
 }
-
-
 
 .middle-panel {
   background-color: #f5f5f5; /* Different background for the fixed-width column */
+}
+/* for the right panel */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+  margin: -30px 0px -26px 0;
+}
+
+.info-box h4 {
+  color: #404145;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.info-box p {
+  color: #74767e;
+  margin-bottom: 18px;
+  margin-top: -25px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 10px 20px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.left-content span {
+  color: #222325;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.left-content p {
+  color: rgba(116, 118, 126, 0.7);
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  color: #74767e;
+}
+
+.icon {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 7px 10px;
+  transition: background-color 0.3s;
+}
+
+.icon:hover {
+  background-color: #f5f5f5;
+}
+
+.orders-box {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.left-orders {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.left-orders h3,
+.left-orders span {
+  color: #222325;
+  font-size: 18px;
+}
+
+.left-orders span {
+  color: #95979d;
+  font-weight: 600;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  color: #62646a;
+  padding: 12px 20px;
+  gap: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+.rotate-icon {
+  transition: transform 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  /* background: #fff; */
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  padding: 25px;
+  text-align: left;
+  width: 100%;
+  /* transition: background-color 0.3s; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #62646a;
+}
+
+.dropdown-content button:hover {
+  background-color: #f5f5f5;
+}
+.rotate-icon.rotated {
+  transform: rotate(360deg);
+}
+
+.upgrade-section {
+  text-align: start;
+  position: relative;
+}
+
+.upgrade-section span::before,
+.upgrade-section span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+.upgrade-section span::before {
+  right: 0%;
+}
+
+.upgrade-section span::after {
+  right: 31%;
 }
