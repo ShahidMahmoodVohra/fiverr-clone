@@ -58,15 +58,14 @@ header {
   position: absolute;
   background-color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 25px;
-  padding: 10px 8px;
+  margin-top: 8px;
+  padding: 10px 0px;
   color: #62646a;
   font-weight: 500;
   border: 1px solid rgba(204, 204, 204, 0.8);
   border-radius: 5px;
-  width: 200px;
+  width: 202px;
   z-index: 1;
-  line-height: 1.5;
 }
 
 .dropdown-content hr {
@@ -553,7 +552,7 @@ hr {
 .content {
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px 10px 20px;
+  padding: 17px 30px 8px 20px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -713,9 +712,9 @@ hr {
 /* Top Seller on Fiverr */
 
 .top-seller-on-fiverr {
-  margin-top: 20px;
+  margin-top: 15px;
   background-color: #fff;
-  padding: 10px 20px 50px 20px;
+  padding: 0px 30px 50px 30px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 150px;
@@ -734,6 +733,7 @@ hr {
   color: #666;
   font-size: 1em;
   margin-bottom: 1em;
+  line-height: 1.5;
 }
 
 
