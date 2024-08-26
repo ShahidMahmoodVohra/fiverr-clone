@@ -231,7 +231,7 @@ header {
   padding: 20px;
   color: #74767e;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(204, 204, 204, 0.5);
 }
 
 .left-panel div {
@@ -257,7 +257,7 @@ header {
   color: #62647d;
   font-weight: 600;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 75px;
 }
 
 .font-weight-bold {
@@ -303,8 +303,10 @@ hr {
   position: relative;
   padding: 20px 20px 10px 20px;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(204, 204, 204, 0.5);
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .earnings-info {
@@ -355,8 +357,9 @@ hr {
   justify-content: space-between;
   padding: 25px 20px;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2px;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-bottom: none;
+  margin-bottom: 3px;
 }
 
 .inbox-section .view-all {
@@ -372,13 +375,21 @@ hr {
 /* client section */
 
 .client-section {
-  height: 300px;
-  max-width: 300px;
+  height: 400px;
+  max-width: 310px;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: darkgrey #f5f5f5;
+  scrollbar-color: #c1c1c1 #f5f5f5;
   scrollbar-width: 10px;
   background-color: #f1f1f1;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-right: none;
+  border-top: none;
+
+  transition: all 0.3s;
+}
+.client-section:hover {
+  scrollbar-color: #979797 #f5f5f5;
 }
 
 .client {
@@ -548,6 +559,7 @@ hr {
   margin-bottom: 20px;
   align-items: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .left-content span {
@@ -615,7 +627,7 @@ hr {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 8px 20px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
   font-size: 16px;
   font-weight: 500;
   color: #62646a;
@@ -625,15 +637,22 @@ hr {
   cursor: pointer;
 }
 
+.dropdown-btn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 .rotate-icon {
   transition: transform 0.3s;
+}
+.vanish {
+  opacity: 0;
 }
 
 .dropdown-content {
   display: none;
   flex-direction: column;
   position: absolute;
-  /* background: #fff; */
+
   border: 1px solid #ccc;
   z-index: 10;
 }
@@ -644,10 +663,10 @@ hr {
   padding: 25px;
   text-align: left;
   width: 100%;
-  /* transition: background-color 0.3s; */
+  transition: background-color 0.3s;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   font-size: 16px;
   font-weight: 500;
   color: #62646a;
@@ -665,6 +684,12 @@ hr {
   position: relative;
 }
 
+.upgrade-section span {
+  color: #62646a;
+  font-weight: 600;
+  font-size: 15px;
+}
+
 .upgrade-section span::before,
 .upgrade-section span::after {
   content: "";
@@ -673,6 +698,8 @@ hr {
   width: 50%;
   height: 2px;
   background-color: lightgrey;
+  transform: translateY(-150%);
+  transition: right 0.3s ease;
 }
 
 .upgrade-section span::before {
@@ -680,5 +707,144 @@ hr {
 }
 
 .upgrade-section span::after {
-  right: 31%;
+  right: 30%;
 }
+
+/* Top Seller on Fiverr */
+
+.top-seller-on-fiverr {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px 20px 50px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px;
+  
+ 
+
+}
+
+.top-seller-on-fiverr h4 {
+  color: #404145;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.top-seller-on-fiverr p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+
+.top-seller-on-fiverr ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+ 
+}
+
+.top-seller-on-fiverr li {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Adjust width as necessary to fit 3 items across */
+
+  gap: 10px;
+
+}
+
+.fa-solid,
+.fa-regular {
+  margin-right: 5px;
+}
+
+.key-title,
+strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.key-text {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.icons-on-fiverr {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.icons-on-fiverr ul {
+  display: flex;
+  justify-content: space-between; /* Ensures space between list items */
+  padding: 0;
+  list-style: none;
+  margin: 0; /* Removes default margin */
+}
+
+.icons-on-fiverr li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns content from top to bottom */
+  flex: 1; /* Distributes space equally */
+  margin: 10px; /* Adds some margin around items */
+}
+
+.icons-on-fiverr li i {
+  font-size: 30px;  
+  margin-bottom: 10px;
+}
+
+.fa-solid,
+.fa-regular {
+  margin-right: 5px;
+  color: #6F7073;
+  font-weight: lighter;
+}
+
+
+
+.key-title,
+strong {
+  font-weight: bold;
+  color: #404145;
+}
+
+.key-text {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: auto; /* Pushes btns-container to the bottom */
+}
+
+.key-link { 
+  color: #446ee7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btns-container {
+  margin-top: auto; /* Aligns buttons to the bottom */
+}
+
+.btns-container a {
+  background-color: #fff;
+  color: #446ee7;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #446ee7;
+}
+
+.btns-container a:hover {
+  background-color: #3F63C8;
+  color: #fff;
+}
+
+
+
+
