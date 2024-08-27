@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 slides.style.transform = `translateX(-${currentIndex * 100 / slideCount}%)`;
             }, 50); // Short delay before sliding to the next slide
         }
-    }, 3000); // Change slide every 3000 milliseconds (3 seconds)
+    }, 4000); // Change slide every 4000 milliseconds (4 seconds)
 });
 
 
