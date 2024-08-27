@@ -717,10 +717,7 @@ hr {
   padding: 0px 30px 50px 30px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 150px;
-  
- 
-
+  margin-bottom: 30px;
 }
 
 .top-seller-on-fiverr h4 {
@@ -736,21 +733,17 @@ hr {
   line-height: 1.5;
 }
 
-
 .top-seller-on-fiverr ul {
   display: flex;
   padding: 0;
   list-style: none;
- 
 }
 
 .top-seller-on-fiverr li {
   display: flex;
   flex-direction: column;
   width: 80%; /* Adjust width as necessary to fit 3 items across */
-
   gap: 10px;
-
 }
 
 .fa-solid,
@@ -779,33 +772,31 @@ strong {
 
 .icons-on-fiverr ul {
   display: flex;
-  justify-content: space-between; /* Ensures space between list items */
+  justify-content: space-between;
   padding: 0;
   list-style: none;
-  margin: 0; /* Removes default margin */
+  margin: 0;
 }
 
 .icons-on-fiverr li {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Aligns content from top to bottom */
+  justify-content: space-between;
   flex: 1; /* Distributes space equally */
-  margin: 10px; /* Adds some margin around items */
+  margin: 10px;
 }
 
 .icons-on-fiverr li i {
-  font-size: 30px;  
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .fa-solid,
 .fa-regular {
   margin-right: 5px;
-  color: #6F7073;
+  color: #6f7073;
   font-weight: lighter;
 }
-
-
 
 .key-title,
 strong {
@@ -820,7 +811,7 @@ strong {
   margin-bottom: auto; /* Pushes btns-container to the bottom */
 }
 
-.key-link { 
+.key-link {
   color: #446ee7;
   text-decoration: none;
   font-weight: bold;
@@ -841,10 +832,84 @@ strong {
 }
 
 .btns-container a:hover {
-  background-color: #3F63C8;
+  background-color: #3f63c8;
   color: #fff;
 }
+/* banner carousel */
+.banner-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+}
 
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 400%; /* Adjust based on the number of slides */
+}
 
+.slide {
+  width: 25%; /* Adjust based on the number of slides */
+  flex-shrink: 0;
+  flex-grow: 0;
+}
 
+.slide img {
+  width: 100%;
+  display: block;
+}
+img {
+  height: 300px;
+  width: auto;
+}
+.banner-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 400%; /* Adjust based on the number of slides */
+}
+
+.slide {
+  width: 25%; /* Adjust based on the number of slides */
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(142, 139, 139);
+  bottom: 20%;
+}
+
+/* Adjusting the gap and stathe crting position of ircles */
+.slide .circle:nth-child(2) {
+  left: 4%;
+}
+.slide .circle:nth-child(3) {
+  left: calc(4% + 20px);
+} /* Slightly reduced gap */
+.slide .circle:nth-child(4) {
+  left: calc(4% + 40px);
+}
+.slide .circle:nth-child(5) {
+  left: calc(4% + 60px);
+}
+
+.white {
+  background-color: white;
+}

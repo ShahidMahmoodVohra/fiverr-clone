@@ -83,4 +83,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// banner carousel slider functionality
+
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+
+    setInterval(() => {
+        if (currentIndex < slideCount - 1) {
+            // Move to the next slide
+            currentIndex++;
+            slides.style.transition = 'transform 0.5s ease';
+            slides.style.transform = `translateX(-${currentIndex * 100 / slideCount}%)`;
+        } else {
+            // Jump back to the first slide without animation
+            slides.style.transition = 'none';  // Disable transition for instant jump
+            slides.style.transform = 'translateX(0%)';
+            setTimeout(() => {
+                // Restart the sliding from the first to the second slide with animation
+                currentIndex = 1;
+                slides.style.transition = 'transform 0.5s ease';  // Re-enable transition
+                slides.style.transform = `translateX(-${currentIndex * 100 / slideCount}%)`;
+            }, 50); // Short delay before sliding to the next slide
+        }
+    }, 3000); // Change slide every 3000 milliseconds (3 seconds)
+});
+
 
