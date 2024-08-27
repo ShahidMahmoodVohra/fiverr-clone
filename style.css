@@ -1041,3 +1041,9 @@ img {
   border: none;
   outline: none;
 }
+
+.key-icon-img{
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
