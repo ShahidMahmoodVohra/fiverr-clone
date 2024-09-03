@@ -111,3 +111,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// logo bottom to top functionality
+document.addEventListener('scroll', function() {
+    var scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    var logo = document.getElementById('logo-container');
+    if (scrollPercentage > 99) {
+        logo.style.opacity = 0;
+    } else {
+        logo.style.opacity = 1;
+    }
+});
+
+
+
