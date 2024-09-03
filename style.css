@@ -222,9 +222,6 @@ header {
 
 /* Styling for individual panels, optional */
 
-.right-panel {
-  padding: 20px 20px 0 20px;
-}
 .left-panel {
   background-color: white;
   padding: 20px;
@@ -922,7 +919,7 @@ img {
 .footer {
   background-color: #fff;
   padding: 40px;
-  z-index: -1;
+  margin-top: 50px;
 }
 
 .footer-columns {
