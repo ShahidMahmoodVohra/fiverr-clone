@@ -15,6 +15,9 @@ header {
   height: 80px;
   align-items: center;
 }
+.hamburger {
+  display: none;
+}
 
 .header-section {
   display: flex;
@@ -213,14 +216,72 @@ header {
   text-decoration: underline;
 }
 
+/* 6/9/2024 */
+/* Base styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 28%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.modal-content {
+  text-align: center;
+}
+.user-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  gap: 7px;
+}
+
+.user-info-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+.user-info-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.user-name-modal {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.user-mail-modal {
+  font-size: 14px;
+  color: #74767e;
+  text-align: left;
+  text-decoration: none;
+}
+
+.nav-item-modal,
+.dropdown-modal {
+  display: none;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Media Query */
+
+/* Styling for individual panels, optional */
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 60px 3fr;
   gap: 2px;
   padding: 20px;
 }
-
-/* Styling for individual panels, optional */
 
 .left-panel {
   background-color: white;
@@ -841,22 +902,18 @@ strong {
   position: relative;
   margin-bottom: -70px;
   margin-left: 22px;
- }
-
-
+}
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
   width: 400%; /* Adjust based on the number of slides */
-
 }
 
 .slide {
   width: 25%; /* Adjust based on the number of slides */
   flex-shrink: 0;
   flex-grow: 0;
- 
 }
 
 .slide img {
@@ -1052,7 +1109,7 @@ img {
 }
 
 #logo {
-  width: 40px;
+  width: 45px;
   height: auto;
   cursor: pointer;
   border-radius: 50%;
