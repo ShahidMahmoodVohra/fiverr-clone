@@ -1060,13 +1060,19 @@ img {
 
 .language-button,
 .currency {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   border: none;
   background: none;
   cursor: pointer;
   padding: 8px 12px;
   border-radius: 40px;
   transition: background-color 0.3s;
+  color: #74767e;
+  font-weight:700;
 }
+
 .info-button {
   margin-left: 10px;
   border: none;
