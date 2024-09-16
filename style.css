@@ -216,6 +216,11 @@ header {
   text-decoration: underline;
 }
 
+/* 599px styles */
+.left-panel-main3{
+  display: none;
+}
+
 /* 6/9/2024 */
 /* Base styles for 1159PX */
 .modal {
