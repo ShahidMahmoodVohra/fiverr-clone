@@ -186,3 +186,39 @@ document
   .forEach(function (content) {
     content.style.overflowY = "scroll"; // This will ensure the scrollbar is always visible
   });
+
+  // 24/09/2024 js for footer mobile 599px 
+  document.addEventListener('DOMContentLoaded', function() {
+    const headers = document.querySelectorAll('.footer-head');
+  
+    headers.forEach(header => {
+      header.addEventListener('click', function() {
+        const dropdown = this.nextElementSibling;
+        const icon = this.querySelector('.fa-angle-down');
+  
+        // Close all other dropdowns and reset icons
+        document.querySelectorAll('.dropdown-content-mobile').forEach(d => {
+          if (d !== dropdown) {
+            d.style.display = 'none';
+          }
+        });
+        document.querySelectorAll('.fa-angle-down').forEach(i => {
+          if (i !== icon) {
+            i.classList.remove('fa-rotate-180');
+          }
+        });
+  
+        // Toggle current dropdown and icon rotation
+        if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+          dropdown.style.display = 'block';
+          icon.classList.add('fa-rotate-180');
+        } else {
+          dropdown.style.display = 'none';
+          icon.classList.remove('fa-rotate-180');
+        }
+      });
+    });
+  });
+  
+
+
