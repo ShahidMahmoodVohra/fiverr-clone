@@ -971,8 +971,9 @@ img {
   display: none;
 } */
  .footer-mobile-columns,
- .footer-mobile-column {
-  display: none;
+ .footer-mobile-column,
+ .footer-head {
+  display: none!important;
  }
 
 
