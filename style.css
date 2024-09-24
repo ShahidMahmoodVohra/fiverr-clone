@@ -971,10 +971,7 @@ img {
   display: none;
 } */
 
- .footer-mobile-column,
- .footer-head{
-  display: none;
- }
+
 
 .footer-columns {
   display: flex;

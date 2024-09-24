@@ -574,10 +574,6 @@
   z-index: 10;
 } */
 
-.footer-mobile-column,
-.footer-head{
- display: initial!important;
-}
 
 .fa-angle-down {
   transition: transform 0.3s ease;
