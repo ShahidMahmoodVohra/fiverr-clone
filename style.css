@@ -972,7 +972,9 @@ img {
 } */
  .footer-mobile-columns,
  .footer-mobile-column,
- .footer-head {
+ .footer-head,
+ .footer-head h6,
+ .footer-head span i{
   display: none!important;
  }
 
