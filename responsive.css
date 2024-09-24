@@ -460,8 +460,6 @@
 .footer-columns{
   display: none;
 } 
-
-
  /* 
 .footer-mobile-columns{
   display:initial;
@@ -531,6 +529,11 @@
   display: block; /* Display the dropdown */
 }
 
+.footer-mobile-columns,
+.footer-mobile-column {
+ display: initial!important;
+}
+
 
 .footer-head {
   display: flex;
@@ -573,7 +576,6 @@
 
   z-index: 10;
 } */
-
 
 .fa-angle-down {
   transition: transform 0.3s ease;
