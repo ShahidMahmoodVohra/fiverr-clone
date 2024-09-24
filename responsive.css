@@ -460,6 +460,11 @@
 .footer-columns{
   display: none;
 } 
+.footer-mobile-columns,
+.footer-mobile-column,
+.footer-head{
+ display: initial;
+}
  /* 
 .footer-mobile-columns{
   display:initial;
