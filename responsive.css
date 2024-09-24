@@ -463,7 +463,7 @@
 .footer-mobile-columns,
 .footer-mobile-column,
 .footer-head{
- display: initial;
+ display: initial!important;
 }
  /* 
 .footer-mobile-columns{
