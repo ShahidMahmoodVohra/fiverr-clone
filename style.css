@@ -970,16 +970,9 @@ img {
 /* .display-none{
   display: none;
 } */
- .footer-mobile-columns,
- .dropdown-mobile,
- .footer-mobile-column,
- .footer-head,
- .footer-head h6,
- .footer-head span i{
-  display: none!important;
- }
-
-
+.footer-mobile-columns {
+  display: none !important;
+}
 
 .footer-columns {
   display: flex;
@@ -1064,7 +1057,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.footer-mobile{
+.footer-mobile {
   display: none;
 }
 
