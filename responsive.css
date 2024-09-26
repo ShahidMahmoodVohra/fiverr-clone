@@ -86,8 +86,8 @@
   .modal::-webkit-scrollbar {
     width: 5px;
   }
-  .footer{
-    padding:30px;
+  .footer {
+    padding: 30px;
   }
   .footer-column-heading {
     width: max-content !important;
@@ -322,7 +322,7 @@
   }
   .online-status2 {
     position: absolute;
-    bottom: 171px;
+    bottom: 148px;
     left: 54px;
     width: 4px;
     height: 4px;
@@ -415,7 +415,7 @@
     margin: 2px 0;
   }
 
-  .dropdown-btn{
+  .dropdown-btn {
     padding: 10px;
     background: #fff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -423,44 +423,47 @@
 
   .upgrade-section span::after {
     right: 17%;
-}
+  }
 
-.icons-on-fiverr ul {
-  flex-direction: column;
-  padding: 5px 0 15px 0;
-  gap: 40px;
- 
-}
-.icons-on-fiverr,
-.icons-on-fiverr li i{
-  margin: 0;
-  padding: 0;
-}
+  .icons-on-fiverr ul {
+    flex-direction: column;
+    padding: 5px 0 15px 0;
+    gap: 40px;
+  }
+  .icons-on-fiverr,
+  .icons-on-fiverr li i {
+    margin: 0;
+    padding: 0;
+  }
 
-.top-seller-on-fiverr li {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 18px;
-  margin: 0;
-}
+  .top-seller-on-fiverr li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px;
+    margin: 0;
+  }
 
-.ket-text{
-  margin-bottom: 10px;
-}
+  .ket-text {
+    margin-bottom: 10px;
+  }
 
-.circle{
-  top: 8%;
-}
+  .banner-carousel {
+    margin-left: 0px;
+  }
 
-.footer{
-  margin-top: -13px;
-}
+  .circle {
+    top: 8%;
+  }
 
-.footer-columns{
-  display: none;
-} 
- /* 
+  .footer {
+    margin-top: -13px;
+  }
+
+  .footer-columns {
+    display: none;
+  }
+  /* 
 .footer-mobile-columns{
   display:initial;
 }
@@ -503,8 +506,8 @@
   z-index: 10;
 } */
 
-/* 24/9/24  */
-/* .footer-mobile-columns {
+  /* 24/9/24  */
+  /* .footer-mobile-columns {
   display: block;
 }
 
@@ -512,62 +515,60 @@
   position: relative;
   margin-bottom: 20px; 
 } */
-.footer-mobile-column {
-  position: relative; /* This makes the positioning context for the absolute children */
-}
+  .footer-mobile-column {
+    position: relative; /* This makes the positioning context for the absolute children */
+  }
 
-.dropdown-content-mobile {
-  display: none; /* Initially hidden */
-  position: absolute;
-  width: 100%; /* Adjust width as necessary */
-  background-color: white; /* Background color for visibility */
-  z-index: 1000; /* Ensures it appears on top of other content */
+  .dropdown-content-mobile {
+    display: none; /* Initially hidden */
+    position: absolute;
+    width: 100%; /* Adjust width as necessary */
+    background-color: white; /* Background color for visibility */
+    z-index: 1000; /* Ensures it appears on top of other content */
+  }
 
-}
+  .dropdown-content-mobile.active {
+    display: block; /* Display the dropdown */
+  }
 
-.dropdown-content-mobile.active {
-  display: block; /* Display the dropdown */
-}
+  .footer-mobile-columns,
+  .dropdown-mobile {
+    display: initial !important;
+  }
 
-.footer-mobile-columns,
-.dropdown-mobile{
- display: initial!important;
-}
+  .footer-head {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 8px 0 15px;
+  }
 
+  .footer-mobile-column h6 {
+    color: #404145;
+    font-size: 16px;
+    margin: 0;
+  }
 
-.footer-head {
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 8px 0 15px;
-}
+  .footer-mobile-column ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Space between h6 and dropdown */
+  }
 
-.footer-mobile-column h6 {
-  color: #404145;
-  font-size: 16px;
-  margin: 0;
-}
+  .footer-mobile-column ul li a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #74767e;
+    line-height: 2.5;
+    text-decoration: none;
+  }
 
-.footer-mobile-column ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px; /* Space between h6 and dropdown */
-}
+  .footer-mobile-column ul li a:hover {
+    text-decoration: underline;
+  }
 
-.footer-mobile-column ul li a {
-  font-size: 17px;
-  font-weight: 500;
-  color: #74767e;
-  line-height: 2.5;
-  text-decoration: none;
-}
-
-.footer-mobile-column ul li a:hover {
-  text-decoration: underline;
-}
-
-/* .dropdown-content-mobile {
+  /* .dropdown-content-mobile {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -577,23 +578,120 @@
   z-index: 10;
 } */
 
-.fa-angle-down {
-  transition: transform 0.3s ease;
+  .fa-angle-down {
+    transition: transform 0.3s ease;
+  }
+
+  .fa-rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  .footer-left,
+  .footer-right {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .footer-right ul {
+    margin: 0;
+  }
 }
 
-.fa-rotate-180 {
-  transform: rotate(180deg);
-}
+/* media queries 425px */
 
+@media (max-width: 425px) {
+  header {
+    height: 60px;
+  }
 
-.footer-left,
-.footer-right{
-  flex-direction: column;
-  gap: 0px;
-}
+  .header-section.logo img {
+    margin: 0 0 0 -30px;
+    width: 99px;
+  }
 
-.footer-right ul{
- margin: 0; 
-}
+  .grid-layout {
+    padding: 12px 20px;
+  }
 
+  .online-status2 {
+    bottom: 175px;
+  }
+
+  .right-panel {
+    padding: 0;
+  }
+
+  .left-panel-header2 {
+    width: 100%;
+    max-width: 425px;
+    padding: 10px 0px;
+  }
+
+  .middle-panel-main,
+  .right-panel-main,
+  .footer-container,
+  .order-box {
+    width: 100% !important;
+    max-width: 425px !important;
+    margin-top: 10px;
+  }
+
+  .level-info,
+  .success-score,
+  .rating,
+  .response-rate,
+  .level-overview {
+    display: flex;
+    padding: 10px 0;
+    width: 425px;
+    justify-content: space-between;
+  }
+  .level-info span,
+  .success-score span,
+  .rating span,
+  .response-rate span,
+  .level-overview span {
+    padding: 0 55px 0 16px;
+  }
+  .level-overview button {
+    width: 344px;
+    margin-left: 21px;
+    margin-bottom: 10px;
+  }
+  .inbox-section {
+    margin: 30px 20px 0px 20px;
+  }
+  .top-info {
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .email-icon {
+    margin-left: 133px;
+  }
+  .time {
+    margin-left: 70px;
+  }
+  .info-box h4 {
+    font-size: 20px;
+  }
+  .text-trunc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .right-content {
+    gap: 0px;
+    font-size: 17px;
+  }
+
+  .upgrade-section span::after {
+    right: 4%;
+  }
+
+  .top-seller-on-fiverr h4 {
+    font-size: 22px;
+  }
+
+  
 }
