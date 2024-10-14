@@ -220,5 +220,24 @@ document
     });
   });
   
-
+  // 24/9/24 2nd
+  document.querySelectorAll('.footer-mobile-column').forEach(column => {
+    column.addEventListener('click', () => {
+      const content = column.querySelector('.dropdown-content-mobile');
+      const isActive = column.classList.contains('active');
+  
+      // Close all other dropdowns before opening a new one
+      document.querySelectorAll('.footer-mobile-column').forEach(c => {
+        c.classList.remove('active');
+        c.querySelector('.dropdown-content-mobile').style.maxHeight = '0';
+      });
+  
+      if (!isActive) {
+        // Expand the clicked one
+        column.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + 'px'; // Set max-height to the scroll height
+      }
+    });
+  });
+  
 
